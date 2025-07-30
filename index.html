@@ -1,115 +1,130 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cogniversos | Psicología</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header class="bg-white shadow sticky top-0 z-50">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-indigo-600">Cogniversos</h1>
-        <div class="flex space-x-2">
-          <a href="testimonios.html" class="px-4 py-2 rounded-xl text-indigo-600 border border-indigo-600 hover:bg-indigo-50 transition text-sm font-medium">
-            Testimonios
-          </a>
-          <a href="#agenda" class="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition text-sm font-medium">
-            Agendar cita
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cogniversos | Psicología</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    :root {
+      --color-azul: #334B5C;
+      --color-beige: #F5F3EF;
+    }
+  </style>
+</head>
+<body class="bg-[var(--color-beige)] text-[var(--color-azul)]">
+
+  <!-- Header -->
+  <header class="bg-[var(--color-beige)] shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="Cogniversos" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold">Cogniversos</h1>
+      </div>
+      <div class="flex space-x-2">
+        <a href="#servicios" class="px-4 py-2 rounded-xl text-[var(--color-azul)] border border-[var(--color-azul)] hover:bg-[var(--color-azul)] hover:text-white transition text-sm font-medium">
+          Servicios
+        </a>
+        <a href="#agenda" class="px-4 py-2 rounded-xl bg-[var(--color-azul)] text-white hover:opacity-90 transition text-sm font-medium">
+          Agendar cita
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 px-4 bg-gradient-to-br from-[var(--color-beige)] to-white">
+    <h2 class="text-4xl font-bold mb-4">Terapia psicológica Online</h2>
+    <p class="max-w-xl mx-auto text-lg mb-6">
+      Acompañamiento psicológico profesional, humano y accesible.  
+      En <strong>Cogniversos</strong> trabajamos contigo para mejorar tu bienestar emocional desde la ciencia y la calidez humana.
+    </p>
+    <a href="#agenda" class="inline-block bg-[var(--color-azul)] text-white px-6 py-3 rounded-xl hover:opacity-90 transition">Agenda tu cita ahora</a>
+  </section>
+
+  <!-- Sobre nosotros -->
+  <section class="max-w-4xl mx-auto py-16 px-4">
+    <h3 class="text-3xl font-bold mb-4">¿Quiénes somos?</h3>
+    <p class="text-lg leading-relaxed">
+      Somos un equipo de psicólogos con enfoque <strong>cognitivo-conductual</strong>, especializados en ayudarte a comprender, afrontar y transformar tus emociones y pensamientos.  
+      Atendemos a adolescentes y adultos de manera virtual, con un trato cercano y respetuoso.  
+      Trabajamos en áreas como ansiedad, depresión, relaciones de pareja, toma de decisiones, manejo emocional y más.
+    </p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="bg-white py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-center">Nuestros servicios</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Terapia individual -->
+        <div class="p-6 border rounded-xl bg-[var(--color-beige)] flex flex-col justify-between">
+          <div>
+            <h4 class="font-semibold text-xl">Terapia individual</h4>
+            <p class="mt-2">
+              Sesiones virtuales de 40 minutos enfocadas en tu bienestar personal.  
+              Desde los 14 años en adelante.
+            </p>
+            <p class="mt-3 font-semibold">Valor: $40.000 COP</p>
+            <p class="text-sm">Paquetes disponibles para mayor economía.</p>
+          </div>
+          <a href="https://wa.me/573212877016?text=Hola%2C%20quiero%20agendar%20una%20sesión%20de%20terapia%20individual" target="_blank" 
+             class="mt-4 flex items-center justify-center space-x-2 bg-green-500 text-white px-4 py-3 rounded-xl hover:bg-green-600 transition text-lg font-medium">
+            <span>📅</span> <span>Quiero agendar</span>
           </a>
         </div>
-      </div>
-    </header>
 
-    <!-- Hero -->
-    <section class="text-center py-20 px-4 bg-gradient-to-br from-indigo-100 to-white">
-      <h2 class="text-4xl font-bold mb-4">Psicología Cognitivo-Conductual Online</h2>
-      <p class="max-w-xl mx-auto text-lg text-gray-600 mb-6">
-        Un enfoque profesional, humano y personalizado. En Cogniversos te acompañamos a mejorar tu bienestar emocional desde la ciencia y el compromiso terapéutico.
-      </p>
-      <a href="#agenda" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 transition">Agenda tu cita ahora</a>
-    </section>
-
-    <!-- Sobre nosotros -->
-    <section class="max-w-4xl mx-auto py-16 px-4">
-      <h3 class="text-3xl font-bold mb-4">¿Quiénes somos?</h3>
-      <p class="text-gray-700 text-lg leading-relaxed">
-        En Cogniversos somos psicólogos con enfoque cognitivo-conductual y más de 2 años de experiencia. Ofrecemos atención psicológica virtual con calidez, claridad y respeto por tu proceso. Atendemos problemáticas como ansiedad, depresión, relaciones afectivas, toma de decisiones, manejo emocional y más. Nuestro compromiso es acompañarte de manera cercana y efectiva, adaptándonos a tus necesidades.
-      </p>
-    </section>
-
-    <!-- Servicios -->
-    <section class="bg-white py-16 px-4">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-3xl font-bold mb-4">Servicios</h3>
-        <ul class="grid md:grid-cols-2 gap-6 mt-6">
-          <li class="p-6 border rounded-xl bg-gray-50 flex flex-col justify-between">
-            <div>
-              <h4 class="font-semibold text-xl">Terapia individual</h4>
-              <p class="text-gray-600 mt-2">Sesiones virtuales de 40 minutos para personas desde los 14 años. Espacios confidenciales y efectivos para tu crecimiento emocional.</p>
-            </div>
-            <a href="https://calendly.com/contacto-cognivers/sesion-terapia" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition text-sm text-center">
-              Agendar sesión
-            </a>
-          </li>
-          <li class="p-6 border rounded-xl bg-gray-50 flex flex-col justify-between">
-            <div>
-              <h4 class="font-semibold text-xl">Taller relaciones saludables</h4>
-              <p class="text-gray-600 mt-2">Un espacio práctico y reflexivo para identificar y transformar patrones dañinos en tus vínculos afectivos. <br><strong>Fecha:</strong> Jueves 10 de julio, 8:00 p.m. hora Col.</p>
-            </div>
-            <a href="https://calendly.com/alejandro-dsalazar96/taller-relaciones-saludables" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition text-sm text-center">
-              Inscribirse al taller
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Cómo funciona -->
-    <section class="py-16 bg-indigo-100 px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-6">¿Cómo funciona?</h3>
-        <ul class="text-left max-w-xl mx-auto text-lg text-gray-700 space-y-4">
-          <li>1. Haz clic en el botón “Agendar sesión”.</li>
-          <li>2. Elige el día y la hora que más te convenga.</li>
-          <li>3. Recibirás un correo de confirmación con el enlace de la sesión virtual.</li>
-          <li>4. Puedes pagar hasta 30 minutos antes de la cita a través de Nequi o Daviplata.</li>
-          <li>5. El día de la sesión, conéctate desde cualquier dispositivo en un lugar cómodo y privado.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Agendar cita -->
-    <section id="agenda" class="py-16 bg-indigo-50 px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-6">Agenda tu cita fácilmente</h3>
-        <p class="text-lg text-gray-600 mb-6">Selecciona tu horario y evita intermediarios. Solo escoge tu cita y listo.</p>
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe src="https://calendly.com/contacto-cognivers/sesion-terapia" width="100%" height="700" frameborder="0" scrolling="no" class="w-full border rounded-xl"></iframe>
+        <!-- Terapia de pareja -->
+        <div class="p-6 border rounded-xl bg-[var(--color-beige)] flex flex-col justify-between">
+          <div>
+            <h4 class="font-semibold text-xl">Terapia de pareja</h4>
+            <p class="mt-2">
+              Espacio para mejorar la comunicación, resolver conflictos y fortalecer su relación.  
+              Sesiones virtuales de 40 minutos.
+            </p>
+            <p class="mt-3 font-semibold">Valor: $65.000 COP</p>
+            <p class="text-sm">Paquetes disponibles para mayor economía.</p>
+          </div>
+          <a href="https://wa.me/573212877016?text=Hola%2C%20quiero%20agendar%20una%20sesión%20de%20terapia%20de%20pareja" target="_blank" 
+             class="mt-4 flex items-center justify-center space-x-2 bg-green-500 text-white px-4 py-3 rounded-xl hover:bg-green-600 transition text-lg font-medium">
+            <span>📅</span> <span>Quiero agendar</span>
+          </a>
         </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- WhatsApp contacto -->
-    <section class="py-8 text-center">
-      <p class="text-gray-600 mb-4">¿Tienes un caso urgente o problema técnico para agendar?</p>
-      <a href="https://wa.me/573212877016" target="_blank" class="inline-block bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600 transition">
-        Escribir por WhatsApp
-      </a>
-      <p class="text-sm text-gray-500 mt-2">Usa este canal para hablar directamente conmigo</p>
-    </section>
+  <!-- Cómo funciona -->
+  <section class="py-16 bg-[var(--color-beige)] px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">¿Cómo funciona?</h3>
+      <ul class="text-left max-w-xl mx-auto text-lg space-y-4">
+        <li>1. Elige el tipo de terapia que necesitas.</li>
+        <li>2. Haz clic en <strong>"Quiero agendar"</strong>.</li>
+        <li>3. Nos pondremos en contacto contigo y agendaremos tu cita.</li>
+        <li>4. Paga por Nequi o Daviplata.</li>
+        <li>5. Conéctate el día y hora acordada desde un lugar cómodo y privado.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-6 text-sm text-gray-500">
-      © 2025 Cogniversos. Todos los derechos reservados.
-    </footer>
-  </body>
+  <!-- Contacto directo -->
+  <section id="agenda" class="py-8 text-center">
+    <p class="mb-4">¿Tienes dudas antes de agendar?</p>
+    <a href="https://wa.me/573212877016" target="_blank" class="inline-block bg-green-500 text-white px-5 py-3 rounded-full hover:bg-green-600 transition text-lg font-medium">
+      💬 Escribir por WhatsApp
+    </a>
+    <p class="text-sm mt-2">Te atenderá una persona de nuestro equipo.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm opacity-70">
+    © 2025 Cogniversos. Todos los derechos reservados.
+  </footer>
+</body>
 </html>
